@@ -1,0 +1,51 @@
+<div class="card" *ngIf="peopleData && peopleData.length">
+  <div class="card-header">
+    People
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+    <table class="table table-hover table-bordered"  >
+      <thead>
+        <tr>
+          <th>NAME</th>
+          <th>HEIGHT</th>
+          <th>MASS</th>
+          <th>HAIR COLOR</th>
+          <th>SKIN COLOR</th>
+          <th>EYE COLOR</th>
+          <th>BIRTH YEAR</th>
+          <th>GENDER</th>
+          <th>HOME WORLD</th>
+          <th>FILMS</th>
+          <th>SPECIES</th>
+          <th>VEHICLES</th>
+          <th>STARSHIPS</th>
+          <th>CREATED</th>
+          <th>EDITED</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let people of peopleData" >
+          <td>{{people.name}}</td>
+          <td>{{people.height}}</td>
+          <td>{{people.mass}}</td>
+          <td>{{people.hair_color}}</td>
+          <td>{{people.skin_color}}</td>
+          <td>{{people.eye_color}}</td>
+          <td>{{people.birth_year}}</td>
+          <td>{{people.gender}}</td>
+          <td>{{people.homeworld}}</td>
+          <td>{{people.films}}</td>
+          <td>{{people.species}}</td>
+          <td>{{people.vehicles}}</td>
+          <td>{{people.starships}}</td>
+          <td>{{people.created}}</td>
+          <td>{{people.edited}}</td>
+          <td>{{people.url}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>

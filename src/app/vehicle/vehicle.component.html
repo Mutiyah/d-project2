@@ -1,0 +1,51 @@
+<div class="card" *ngIf="vehicleData && vehicleData.length">
+  <div class="card-header">
+    Vehicle
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th>NAME</th>
+          <th>MODEL</th>
+          <th>MANUFACTURER</th>
+          <th>COST IN CREDIT</th>
+          <th>LENGTH</th>
+          <th>MAX ATMOSPHERE SPEED</th>
+          <th>CREW</th>
+          <th>PASSENGERS</th>
+          <th>CARGO CAPACITY</th>
+          <th>CONSUMABLES</th>
+          <th>VEHICLE CLASS</th>
+          <th>PILOT</th>
+          <th>FILMS</th>
+          <th>CREATED</th>
+          <th>EDITED</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vehicle of vehicleData " >
+          <td>{{vehicle.name}}</td>
+          <td>{{vehicle.model}}</td>
+          <td>{{vehicle.manufacturer}}</td>
+          <td>{{vehicle.cost_in_credits}}</td>
+          <td>{{vehicle.length}}</td>
+          <td>{{vehicle.max_atmosphering_speed}}</td>
+          <td>{{vehicle.crew}}</td>
+          <td>{{vehicle.passengers}}</td>
+          <td>{{vehicle.cargo_capacity}}</td>
+          <td>{{vehicle.consumables}}</td>
+          <td>{{vehicle.vehicle_class}}</td>
+          <td>{{vehicle.pilots}}</td>
+          <td>{{vehicle.films}}</td>
+          <td>{{vehicle.created}}</td>
+          <td>{{vehicle.edited}}</td>
+          <td>{{vehicle.url}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>

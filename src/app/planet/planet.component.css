@@ -1,0 +1,27 @@
+.card{
+  background-color: #517536;
+  color: #e7c554;
+  box-shadow: 0 0 10px #172b0f;
+}
+
+.card-header{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+table{
+  background-color: #172b0f;
+  color: #b0bf85;
+  font-family: sans-serif;
+}
+table{
+  border-color: #759d58;
+}
+
+th{
+  color: #e7c554;
+}
+
+tr:hover{
+  color: #e7c554 !important;
+}
