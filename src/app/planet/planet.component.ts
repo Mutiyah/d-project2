@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IPlanet } from './planet';
+import { IPlanet } from '../planet/planet';
 import {PlanetService} from '../shared/planet.service';
 
 @Component({
@@ -11,12 +11,13 @@ export class PlanetComponent implements OnInit {
 planetData : IPlanet[] = [];
 totalPlanets! : number;
 
-  constructor(public planetService : PlanetService) { }
+  constructor(private planetService : PlanetService) { }
 
   ngOnInit(): void {
       this.planetService.getPlanet().subscribe(
-        planetApiData => {
-          this.planetData = planetApiData.results;
+        (planetApiData: any) => {
+          this.planetData = planetApiData.results
+          // this.planetData = planetApiData
           this.totalPlanets = this.planetData.length;
           console.log(this.totalPlanets);
         }

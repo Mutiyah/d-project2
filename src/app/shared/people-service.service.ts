@@ -13,9 +13,6 @@ export class PeopleServiceService {
   constructor(private http : HttpClient) { }
 
   getPeople(): Observable<IPeople[]> {
-    return this.http.get<IPeople[]>(this.peopleApi)
-    // .pipe(
-    //   tap(data => console.log(JSON.stringify(data)))
-    // )
+    return this.http.get<IPeople[]>(`${this.peopleApi}`)
   }
 }

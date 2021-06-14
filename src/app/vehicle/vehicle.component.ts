@@ -13,12 +13,12 @@ export class VehicleComponent implements OnInit {
 vehicleData : IVehicle[] = [];
 totalVehicles! : number;
 
-  constructor(public vehicleService : VehicleService) { }
+  constructor(private vehicleService : VehicleService) { }
 
   ngOnInit(): void {
     this.vehicleService.getVehicles().subscribe(
-      data =>{
-              this.vehicleData = data.results;
+      (data : any) =>{
+              this.vehicleData = data.results
               this.totalVehicles = this.vehicleData.length
               console.log(this.totalVehicles)
     }

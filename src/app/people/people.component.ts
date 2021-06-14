@@ -17,7 +17,7 @@ export class PeopleComponent implements OnInit {
 
   ngOnInit(): void {
       this.peopleService.getPeople().subscribe(
-        data => {
+        (data : any) => {
               this.peopleData = data.results
               this.totalPeople = this.peopleData.length;
                console.log(this.totalPeople)

@@ -15,4 +15,5 @@ export interface IPeople{
   created : string;
   edited : string;
   url : string;
+
 }
