@@ -1,0 +1,32 @@
+<!-- <ul>
+  <li>{{people['name']}}</li>
+</ul> -->
+<div class="container">
+<div class="card"  *ngIf="people">
+  <div class="card-header">
+    <span><i class="fa fa-user"></i> Person:</span>  {{people['name']}}
+  </div>
+  <div class="card-body">
+    <ul>
+     <div>
+       <li><b>Name: </b> {{people['name']}}</li>
+      <li><b>Height: </b> {{people['height']}}</li>
+      <li><b>Mass: </b> {{people['mass']}}</li>
+      <li><b>Hair_color</b> {{people['hair_color']}}</li>
+      <li><b>Skin_color</b> {{people['skin_color']}}</li>
+    </div>
+    <div>
+      <li><b>Birth_year</b> {{people['birth_year']}}</li>
+      <li><b>Gender</b> {{people['gender']}}</li>
+      <li><b>Homeworld</b> <a href="#">{{people['homeworld']}}</a></li>
+      <li><b>Created</b> {{people['created']}}</li>
+      <li><b>Edited</b> {{people['edited']}}</li>
+    </div>
+    </ul>
+  </div>
+
+  <div class="card-footer">
+    <button (click)="onBack()"><i class="fa fa-chevron-left"></i>Back</button>
+  </div>
+</div>
+</div>

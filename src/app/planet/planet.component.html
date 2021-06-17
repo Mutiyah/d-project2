@@ -1,6 +1,9 @@
 <div class="card" *ngIf="planetData && planetData.length">
   <div class="card-header">
-    Planet
+    <div class="d-flex justify-content-between">
+      <button class="planetButtons" [routerLink]="['/home']"><i class="fa fa-chevron-left"></i> Back</button>
+      <button class="planetButtons" [routerLink]="['/planet']">Planet</button>
+    </div>
   </div>
   <div class="card-body">
     <div class="table-responsive">
@@ -24,7 +27,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let planet of planetData " >
+        <tr *ngFor="let planet of planetData let n = index" [routerLink]="['/planet', n]">
           <td>{{planet.name}}</td>
           <td>{{planet.rotation_period}}</td>
           <td>{{planet.orbital_period}}</td>

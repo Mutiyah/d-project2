@@ -23,5 +23,21 @@ th{
 }
 
 tr:hover{
+  cursor: pointer;
   color: #e7c554 !important;
+}
+
+.planetButtons{
+  box-shadow: 0 0 10px #172b0f;
+  background-color: #e7c554;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1em;
+}
+
+.planetButtons i{
+  margin-right: 3px;
+  font-size: .8em;
 }

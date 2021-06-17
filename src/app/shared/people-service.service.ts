@@ -15,4 +15,8 @@ export class PeopleServiceService {
   getPeople(): Observable<IPeople[]> {
     return this.http.get<IPeople[]>(`${this.peopleApi}`)
   }
+
+  getPeopleDetails(): Observable<IPeople[]> {
+    return this.http.get<IPeople[]>(`${this.peopleApi}`)
+  }
 }

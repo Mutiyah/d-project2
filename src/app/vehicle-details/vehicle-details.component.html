@@ -1,0 +1,32 @@
+<!-- <ul>
+  <li>{{vehicle['name']}}</li>
+</ul> -->
+<div class="container">
+  <div class="card"  *ngIf="vehicle">
+    <div class="card-header">
+      <span><i class="fa fa-user"></i> Vehicle:</span>  {{vehicle['name']}}
+    </div>
+    <div class="card-body">
+      <ul>
+       <div>
+         <li><b>Name: </b> {{vehicle['name']}}</li>
+        <li><b>Model: </b> {{vehicle['model']}}</li>
+        <li><b>Manufacturer: </b> {{vehicle['manufacturer']}}</li>
+        <li><b>Cost_in_credits</b> {{vehicle['cost_in_credits']}}</li>
+        <li><b>Length</b> {{vehicle['length']}}</li>
+      </div>
+      <div>
+        <li><b>Max_atm_speed</b> {{vehicle['max_atmosphering_speed']}}</li>
+        <li><b>Crew</b> {{vehicle['crew']}}</li>
+        <li><b>Cargo_capacity</b> <a href="#">{{vehicle['cargo_capacity']}}</a></li>
+        <li><b>Passengers</b> {{vehicle['passengers']}}</li>
+        <li><b>Vehicle_class</b> {{vehicle['vehicle_class']}}</li>
+      </div>
+      </ul>
+    </div>
+
+    <div class="card-footer">
+      <button [routerLink]="['/vehicle']"><i class="fa fa-chevron-left"></i>Back</button>
+    </div>
+  </div>
+  </div>

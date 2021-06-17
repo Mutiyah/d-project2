@@ -13,6 +13,8 @@ planetApi : string = "https://swapi.dev/api/planets";
 
   getPlanet() : Observable<IPlanet[]>{
       return this.http.get<IPlanet[]>(this.planetApi)
-
   }
+
+
+
 }

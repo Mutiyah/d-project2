@@ -1,0 +1,32 @@
+<!-- <ul>
+  <li>{{planet['name']}}</li>
+</ul> -->
+<div class="container">
+  <div class="card"  *ngIf="planet">
+    <div class="card-header">
+      <span><i class="fa fa-user"></i> Planet:</span>  {{planet['name']}}
+    </div>
+    <div class="card-body">
+      <ul>
+       <div>
+         <li><b>Name: </b> {{planet['name']}}</li>
+        <li><b>Rotation_period: </b> {{planet['rotation_period']}}</li>
+        <li><b>Orbital_period: </b> {{planet['orbital_period']}}</li>
+        <li><b>Diameter</b> {{planet['diameter']}}</li>
+        <li><b>Climate</b> {{planet['climate']}}</li>
+      </div>
+      <div>
+        <li><b>Gravity</b> {{planet['gravity']}}</li>
+        <li><b>Terrain</b> {{planet['terrain']}}</li>
+        <li><b>Surface_water</b> <a href="#">{{planet['surface_water']}}</a></li>
+        <li><b>Population</b> {{planet['population']}}</li>
+        <li><b>Edited</b> {{planet['edited']}}</li>
+      </div>
+      </ul>
+    </div>
+
+    <div class="card-footer">
+      <button [routerLink]="['/planet']"><i class="fa fa-chevron-left"></i>Back</button>
+    </div>
+  </div>
+  </div>

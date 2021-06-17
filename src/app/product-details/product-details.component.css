@@ -1,0 +1,86 @@
+.container{
+  padding-top: 10vh  !important;
+  padding-bottom:10vh !important;
+  height: 100vh !important;
+  box-sizing: border-box;
+}
+.card{
+  height: auto;
+  box-shadow: 0 0 10px #172b0f;
+  outline: none !important;
+  border: none;
+}
+.card-header, .card-footer{
+background-color:  #517536;
+color: #e7c554 !important;
+height: 45px;
+}
+
+.card-header span{
+    color: #172b0f;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.card-body{
+  background-color: #e7c554;
+  overflow: hidden;
+  height: auto;
+}
+.card-body ul{
+  width: fit-content;
+    margin: auto;
+}
+.card-body ul li{
+  padding-top: 30px;
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.card-body ul li a{
+  color: #000;
+}
+
+.card-body ul li b{
+  min-width: 100px;
+}
+
+.card-footer button{
+  box-shadow: 0 0 10px #172b0f;
+  background-color: #e7c554;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.1em;
+}
+.card-footer button i{
+  margin-right: 3px;
+  font-size: .8em;
+}
+
+.card-footer button:hover{
+  background-color: #dab12a;
+}
+
+
+@media screen and (min-width: 900px) {
+  .card{
+  height: 80vh;
+  }
+  .card-body ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .card-body ul div{
+    width: 40%;
+  }
+
+  .card-body ul li{
+    margin-left: 0px;
+  }
+}

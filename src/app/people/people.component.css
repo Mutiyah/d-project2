@@ -24,4 +24,5 @@ th{
 
 tr:hover{
   color: #e7c554 !important;
+  cursor: pointer;
 }
